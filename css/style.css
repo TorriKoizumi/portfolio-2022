@@ -1,0 +1,85 @@
+/* GLOBAL RESETS */
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIABLES */
+
+/* BREAKPOINTS */
+/* --breakpoint-small:768px; */
+
+
+/* LAYOUT */
+html,
+    body{
+        height: 100%;
+        margin: 0;
+}
+
+/* TYPOGRAPHY */
+::selection{
+    color: white;
+    background-color: #fd0330;
+}
+
+/* NAVIGATION */
+.site-header{
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.site-header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.site-header li{
+    margin-left: 1em;
+}
+
+/* LANDING PAGE HERO */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-photo{
+    position: absolute;
+    min-width: 400px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-photo img{
+    width: 40vw;
+    height: auto;
+}
+
+canvas{
+    border: 3px solid black;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: calc(40vw + 100px);
+    height: ca;
+}
+/* I want the canvas to always be 100px larger than the img */
+
+
+
+/* ABOUT */
+#about{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
