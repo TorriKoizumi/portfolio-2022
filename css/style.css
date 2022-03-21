@@ -19,6 +19,15 @@ html,
         margin: 0;
 }
 
+section{
+    display: block;
+}
+
+/* STRUCTURE */
+.container{
+    padding: 0 4vw 0 4vw;
+}
+
 /* TYPOGRAPHY */
 ::selection{
     color: white;
@@ -31,6 +40,8 @@ html,
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .site-header ul{
@@ -72,7 +83,7 @@ canvas{
     z-index: 1;
     display: block;
     width: calc(40vw + 100px);
-    height: ca;
+    /* height: calc(); */
 }
 /* I want the canvas to always be 100px larger than the img */
 
@@ -80,6 +91,5 @@ canvas{
 
 /* ABOUT */
 #about{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
 }

@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <nav class="site-header">
+        <nav class="site-header container">
             <h2>Logo</h2>
 
             <ul>
@@ -31,16 +31,20 @@
     </section>
     
     <section id="about">
-        <p>aloha!</p>
-        <div>
-            <h1>Nice to see you, my name is Torri.</h1>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odit magnam saepe non odio neque corporis inventore, aperiam quasi eos blanditiis optio. Nobis porro nemo numquam debitis consequuntur corrupti optio natus nesciunt, voluptas deserunt sed perferendis ipsum temporibus doloribus aperiam beatae libero itaque enim ut eos? Recusandae inventore corporis impedit?</p>
-
-            <p>[Image]</p>
-            <p>Sandys</p>
-            <p>[Image]</p>
+        
+        <div class="container">
+            <span>aloha!</span>
+            <div>
+                <h1>Nice to see you, my name is Torri.</h1>
+    
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odit magnam saepe non odio neque corporis inventore, aperiam quasi eos blanditiis optio. Nobis porro nemo numquam debitis consequuntur corrupti optio natus nesciunt, voluptas deserunt sed perferendis ipsum temporibus doloribus aperiam beatae libero itaque enim ut eos? Recusandae inventore corporis impedit?</p>
+    
+                <p>[Image]</p>
+                <p>Sandys</p>
+                <p>[Image]</p>
+            </div>
         </div>
+        
     </section>
 
     <section id="projects">
@@ -48,16 +52,35 @@
         <h1>Lorem Ipsum</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, pariatur!</p>
 
-        <hr>
-        <div class="drawer"></div>
-        <hr>
-        <div class="drawer"></div>
-        <hr>
-        <div class="drawer"></div>
-        <hr>
-        <div class="drawer"></div>
-        <hr>
-        <div class="drawer"></div>
+        <div class="accordion">
+            <div class="accordion-toggle">
+                <div class="project-info">
+                    <h1>Naos</h1>
+                    <p>Temple Architects</p>
+                </div>
+                
+                <div class="svg">
+                    X
+                </div>
+            </div>
+
+            <nav class="dropdown">
+                <a href="#">
+                    <div class="accordion-link-text">
+                        <div>Naos</div>
+
+                        <div>View Case Study</div>
+                    </div>
+
+                    <div class="accordion-image-wrapper">
+                        <div class="accordion-image-overlay"></div>
+
+                        <img src="#" alt="#" class="accordion-image">
+                    </div>
+                </a>
+            </nav>
+        </div>
+
     </section>
 
     <section id="contact">
