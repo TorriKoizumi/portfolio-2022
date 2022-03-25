@@ -7,9 +7,26 @@
 }
 
 /* VARIABLES */
+body{
+    --color-body-backround: rgb(255 255 255 / .8);
+    --color-body-text: rgb(0 0 0 / 1);
+    --color-body-text-hover: rgb(0 0 0 / .5);
+    --selection-color: #fd0330;
+
+    --font-sans: 'Acumin', sans-serif;
+    --font-serif: 'Times New Roman', serif;
+
+    --spacing-unit: 1rem;
+
+    --breakpoint-small: 768px;
+    --breakpoint-medium: 1050px;
+    --breakpoint-large: 1250px;
+}
 
 /* BREAKPOINTS */
 /* --breakpoint-small:768px; */
+
+
 
 
 /* LAYOUT */
@@ -23,16 +40,51 @@ section{
     display: block;
 }
 
-/* STRUCTURE */
-.container{
-    padding: 0 4vw 0 4vw;
+
+/* GLOBAL STYLING */
+body{
+    background-color: var(--color-body-backround);
+    font-family: var(--font-sans);
+    color: var(--color-body-text);
 }
+
+a {
+    color: var(--color-body-text);
+}
+a:hover {
+    color: var(--color-body-text-hover);
+}
+
+
+
+/* STRUCTURE */
+/* .site-wrapper{
+    background-color: pink;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer'
+    ;
+    grid-template-rows: auto 1fr auto;
+} */
+
+.container{
+    padding: 0 2rem 0 2rem;
+}
+
 
 /* TYPOGRAPHY */
 ::selection{
     color: white;
-    background-color: #fd0330;
+    background-color: var(--selection-color);
 }
+
+h1, h2, h3 {
+    margin: .3em 0;
+}
+
 
 /* NAVIGATION */
 .site-header{
@@ -55,6 +107,7 @@ section{
     margin-left: 1em;
 }
 
+
 /* LANDING PAGE HERO */
 .hero{
     min-height: 100vh;
@@ -72,8 +125,9 @@ section{
     justify-content: center;
 }
 
+
 .hero-photo img{
-    width: 40vw;
+    max-width: 20rem;
     height: auto;
 }
 
@@ -82,9 +136,36 @@ canvas{
     position: relative;
     z-index: 1;
     display: block;
-    width: calc(40vw + 100px);
-    /* height: calc(); */
+
+    width: 27rem;
+    height: 37rem;
 }
+
+@media (min-width: 768px) {
+    .hero-photo img{
+        max-width: 25rem;
+        height: auto;
+    }
+
+    canvas{
+        width: 32rem;
+        height: 45rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .hero-photo img{
+        max-width: 30rem;
+        height: auto;
+    }
+
+    canvas{
+        width: 50rem;
+        height: 58rem;
+    }
+}
+
+
 /* I want the canvas to always be 100px larger than the img */
 
 
