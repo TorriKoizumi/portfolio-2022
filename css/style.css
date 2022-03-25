@@ -24,7 +24,7 @@ body{
 }
 
 /* BREAKPOINTS */
-/* --breakpoint-small:768px; */
+
 
 
 
@@ -85,6 +85,10 @@ h1, h2, h3 {
     margin: .3em 0;
 }
 
+h1{
+    font-size: 3em;
+}
+
 
 /* NAVIGATION */
 .site-header{
@@ -132,10 +136,10 @@ h1, h2, h3 {
 }
 
 canvas{
-    border: 3px solid black;
+    border: 2px dashed black;
     position: relative;
     z-index: 1;
-    display: block;
+    display: none;
 
     width: 27rem;
     height: 37rem;
@@ -143,11 +147,12 @@ canvas{
 
 @media (min-width: 768px) {
     .hero-photo img{
-        max-width: 25rem;
+        max-width: 24rem;
         height: auto;
     }
 
     canvas{
+        display: block;
         width: 32rem;
         height: 45rem;
     }
@@ -155,7 +160,7 @@ canvas{
 
 @media (min-width: 1250px) {
     .hero-photo img{
-        max-width: 30rem;
+        max-width: 28rem;
         height: auto;
     }
 
