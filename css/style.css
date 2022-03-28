@@ -13,10 +13,12 @@ body{
     --color-body-text-hover: rgb(0 0 0 / .5);
     --selection-color: #fd0330;
 
-    --font-header: 'montserrat', sans-serif;
-    --font-body: 'roc-grotesk', serif;
+    --font-header: 'montserrat', 'Helvetica', sans-serif;
+    --font-body: 'roc-grotesk', 'Avenir Next', 'Arial', sans-serif;
 
+    --base-font-size: 25px;
     --spacing-unit: 1rem;
+    --left-margin: 33%;
 
     --breakpoint-small: 768px;
     --breakpoint-medium: 1050px;
@@ -46,6 +48,7 @@ body{
     background-color: var(--color-body-backround);
     font-family: var(--font-body);
     color: var(--color-body-text);
+    font-size: var(--base-font-size);
 }
 
 a {
@@ -91,7 +94,7 @@ h1, h2, h3 {
 }
 
 h1{
-    font-size: 3em;
+    font-size: 3.157rem;
 }
 
 
@@ -115,6 +118,10 @@ h1{
 .site-header li{
     margin-left: 1em;
 }
+
+
+
+
 
 
 /* LANDING PAGE HERO */
@@ -178,8 +185,9 @@ canvas{
     }
 
     canvas{
-        width: 50rem;
-        height: 58rem;
+        width: 40rem;
+        /* height: 50rem; */
+        height: 90vh;
     }
 }
 
@@ -190,15 +198,53 @@ canvas{
 
 /* ABOUT */
 #about{
+    margin-top: 5rem;
     display: flex;
+}
+
+.about-header{
+
 }
 
 .heading-label{
     position: absolute;
 }
 
-.about-header{
+.about-headline{
     text-indent: 15rem;
     font-weight: bold;
-
+    display: flex;
+    flex: 0 0 75%;
+    max-width: 75%;
+    margin-bottom: 5rem;
 }
+
+.about-content{
+    display: block;
+    margin-left:var(--left-margin);
+    flex: 0 0 33%;
+    max-width: 33%;
+    margin-bottom: 10rem;
+}
+
+.about-content p{
+    margin-bottom: 1rem;
+}
+
+/* .about-photos{
+    display: flex;
+} */
+        /* These are place holders */
+        .sandys-1{
+            width: 980px;
+            height: 580.89px;
+            background-color: #DFDFDF;
+            margin-left: var(--left-margin);
+        }
+
+        .sandys-2{
+            width: 450px;
+            height: 450px;
+            background-color: #DFDFDF;
+        }
+
