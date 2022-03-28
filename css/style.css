@@ -136,8 +136,16 @@ h1{
 
 
 .hero-photo img{
+    position: absolute;
     max-width: 20rem;
     height: auto;
+}
+
+.hero-photo video{
+    position: absolute;
+    max-width: 20rem;
+    height: auto;
+    z-index: 2;
 }
 
 canvas{
