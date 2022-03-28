@@ -87,6 +87,7 @@ a:hover {
 h1, h2, h3 {
     font-family: var(--font-header);
     margin: .3em 0;
+    font-weight: normal;
 }
 
 h1{
@@ -184,7 +185,12 @@ canvas{
     display: flex;
 }
 
+.heading-label{
+    position: absolute;
+}
+
 .about-header{
     text-indent: 15rem;
+    font-weight: bold;
 
 }
