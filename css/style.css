@@ -14,7 +14,7 @@ body{
     --selection-color: #fd0330;
 
     --font-header: 'montserrat', 'Helvetica', sans-serif;
-    --font-body: 'roc-groteskx', 'Avenir Next', 'Arial', sans-serif;
+    --font-body: 'roc-grotesk', 'Avenir Next', 'Arial', sans-serif;
 
     --base-font-size: 20px;
     --spacing-unit: 1rem;
@@ -138,7 +138,6 @@ h1{
 
 .hero-photo{
     position: absolute;
-    min-width: 400px;
     max-width: 600px;
     display: flex;
     align-items: center;
@@ -206,27 +205,25 @@ canvas{
     display: flex;
 }
 
-/* .about-header{
-Need some way to place label within the line
-} */
+.about-header{
+max-width: 75%;
+}
 
 .heading-label{
-    position: absolute;
+    font-size: var(--base-font-size);
+    font-weight: normal;
 }
 
 .about-headline{
-    text-indent: 15rem;
+
     font-weight: bold;
-    display: flex;
-    flex: 0 0 75%;
-    max-width: 75%;
-    margin-bottom: 5rem;
+
 }
 
 .about-content{
     display: block;
     flex: 0 0 25%;
-    max-width: 25%;
+    max-width: 20rem;
     margin-bottom: 10rem;
 }
 
@@ -239,13 +236,13 @@ Need some way to place label within the line
 } */
         /* These are place holders */
         .sandys-1{
-            width: 66%;
+            width: 66.666%;
             height: 580.89px;
             background-color: #DFDFDF;
         }
 
         .sandys-2{
-            width: 450px;
+            width: 31%;
             height: 450px;
             background-color: #DFDFDF;
         }
