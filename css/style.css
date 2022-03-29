@@ -206,9 +206,9 @@ canvas{
     display: flex;
 }
 
-.about-header{
-/* Need some way to place label within the line */
-}
+/* .about-header{
+Need some way to place label within the line
+} */
 
 .heading-label{
     position: absolute;
