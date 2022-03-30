@@ -19,6 +19,7 @@ body{
     --base-font-size: 20px;
     --spacing-unit: 1rem;
     --left-margin: 33%;
+    --border-radius: 69px;
 
     --breakpoint-small: 768px;
     --breakpoint-medium: 1050px;
@@ -65,22 +66,15 @@ a:hover {
 
 
 /* STRUCTURE */
-/* .site-wrapper{
-    background-color: pink;
+.site-wrapper{
+    /* background-color: pink; */
     min-height: 100%;
-    display: grid;
-    grid-template-areas: 
-        'header'
-        'main'
-        'footer'
-    ;
-    grid-template-rows: auto 1fr auto;
-} */
-
-.container{
     padding: 0 2rem 0 2rem;
 }
 
+/* .container{
+    Nothin' Here
+} */
 
 /* TYPE UTILITY CLASSES */
 
@@ -104,7 +98,7 @@ h1{
 
 /* NAVIGATION */
 .site-header{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -277,7 +271,7 @@ max-width: 75%;
 
 .contact-box{
     border: 1px solid var(--color-body-text);
-    border-radius: 69px;
+    border-radius: var(--border-radius);
     width: 100%;
     height: 70vh;
 
@@ -315,6 +309,47 @@ max-width: 75%;
     text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
+/* PROJECT PAGE */
+.project-hero{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.project-title{
+    font-weight:lighter;
+}
+
+.project-header-image{
+    height: 90vh;
+    width: auto;
+}
+
+.project-hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
 .hover-underline-animation{
     display: inline-block;
     position: relative;
