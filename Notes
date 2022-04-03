@@ -5,6 +5,7 @@ What isn't working right now:
     -The video doesn't auto play on page load. It plays are random times
     -The photos aren't lining up
     -Contact content is full height
+    -Project hero imageis not 90vh
 
 
 -Do I want a seperate css file for the project page?
