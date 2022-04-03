@@ -77,6 +77,15 @@ a:hover {
     Nothin' Here
 } */
 
+
+/* GRID */
+.grid{
+    grid-template-columns: repeat(7,1fr) ;
+}
+
+
+
+
 /* TYPE UTILITY CLASSES */
 
 
