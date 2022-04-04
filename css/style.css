@@ -74,14 +74,23 @@ a:hover {
 }
 
 /* .container{
-    Nothin' Here
+
 } */
 
 
-/* GRID */
-.grid{
-    grid-template-columns: repeat(7,1fr) ;
+
+/* GRID GRID GRID */
+.container-grid{
+    display:grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-gap: 1rem;
 }
+
+.r-10{
+    grid-column: 5 / 15;
+}
+
+
 
 
 
@@ -380,24 +389,35 @@ max-width: 75%;
     margin-bottom: var(--bottom-spacing);
 }
 
-.project-info{
-    display: flex;
 
+.left{
+    grid-column: 1 / span 2;
+}
+
+.right{
+    grid-column: 3 / span 2;
 }
 
 .info-subhead{
     font-family: 'roc-grotesk-wide';
     font-weight: bold;
+    margin-top: 0;
 }
 
+.case-study{
+    grid-column: 10 / span 5;
+}
 
+.case-study br{
+    margin-bottom: 1rem;
+}
 
 
 .image-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     margin-bottom: var(--bottom-spacing);
 }
 
