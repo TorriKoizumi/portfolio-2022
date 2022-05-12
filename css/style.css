@@ -247,6 +247,7 @@ p{
 
 .hero-photo video{
     position: absolute;
+    border-radius: var(--border-radius);
     max-width: 20rem;
     height: auto;
     z-index: 2;
