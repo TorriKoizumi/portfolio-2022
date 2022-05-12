@@ -234,6 +234,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -241,6 +242,7 @@ p{
     position: absolute;
     max-width: 20rem;
     height: auto;
+    border-radius: var(--border-radius);
 }
 
 .hero-photo video{
