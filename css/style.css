@@ -158,6 +158,12 @@ p{
 
 /* NAVIGATION */
 
+@media(min-width:768px) {
+    .site-header{
+        padding: 2rem;
+    }
+}
+
 .site-header{
 
 
@@ -166,7 +172,7 @@ p{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem;
+    
 }
 
 .site-header ul{
